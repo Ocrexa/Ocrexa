@@ -1,7 +1,8 @@
 name: Update Trailhead Stats
-workflow_dispatch: 
+on:
+  workflow_dispatch: # Allows the workflow to be run manually
   schedule:
-    - cron: '0 0 * * *' 
+    - cron: '0 0 * * *' # Runs the workflow every day at midnight UTC
     
 jobs:
   update-stats:
